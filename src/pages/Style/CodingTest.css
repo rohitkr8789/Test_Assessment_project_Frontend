@@ -1,0 +1,199 @@
+.coding-container-main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+/* LEFT PANEL */
+.question-panel-main {
+  flex: 0.9;
+}
+
+.question-card-main {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.question-card-main h3 {
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.marks {
+  font-weight: 600;
+  color: #6366f1;
+  margin-top: 10px;
+}
+
+.example-box-main {
+  background: #f1f5f9;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* RIGHT PANEL */
+.editor-panel-main {
+  flex: 1.8;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* BUTTONS */
+.editor-buttons-main {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.run-btn {
+  background: #0ea5e9;
+  border: none;
+  padding: 10px 18px;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.run-btn:hover {
+  background: #0284c7;
+}
+
+.submit-btn {
+  background: #22c55e;
+  border: none;
+  padding: 10px 18px;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.submit-btn:hover {
+  background: #16a34a;
+}
+
+.submit-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* SPINNER */
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid white;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* OUTPUT BOX FIXED */
+.output-box-main {
+  background: #020617;
+  color: #38bdf8;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: monospace;
+}
+
+/* RESULT SECTION */
+.result-box-main {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.score-box {
+  margin-bottom: 15px;
+}
+
+.testcase-card {
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.testcase-card.pass {
+  background: #dcfce7;
+  border: 1px solid #22c55e;
+}
+
+.testcase-card.fail {
+  background: #fee2e2;
+  border: 1px solid #ef4444;
+}
+
+/* NAV BUTTONS */
+.next-btn-main {
+  background: #6366f1;
+  border: none;
+  padding: 10px 18px;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.next-btn-main:hover {
+  background: #4f46e5;
+}
+
+.leaderboard-btn-main {
+  background: #f59e0b;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.leaderboard-btn-main:hover {
+  background: #d97706;
+}
+
+/* CUSTOM INPUT */
+.custom-input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.custom-input-box input {
+  padding: 8px;
+  border: 1px solid #cbd5f5;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* INPUT USED */
+.input-used {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+/* ERROR BOX */
+.error-box {
+  color: #f87171;
+}

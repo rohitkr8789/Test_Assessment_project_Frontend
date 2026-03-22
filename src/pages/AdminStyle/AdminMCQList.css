@@ -1,0 +1,187 @@
+.mcq-container {
+  padding: 5px 20px;
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  max-width: 100%;
+  min-height: 100vh;
+  color: #1e293b;
+}
+
+.mcq-title {
+  color: #0ea5e9;
+  margin-bottom: 20px;
+}
+
+/* Controls */
+.mcq-controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.mcq-controls input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5f5;
+  background: #ffffff;
+  color: #1e293b;
+}
+
+.mcq-controls select {
+  padding: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #cbd5f5;
+  color: #1e293b;
+}
+
+/* Cards */
+.mcq-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+  gap: 20px;
+}
+
+.mcq-card {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 14px;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.mcq-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Header */
+.mcq-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mcq-id {
+  color: #64748b;
+}
+
+/* Correct badge */
+.mcq-correct {
+  background: #dcfce7;
+  padding: 4px 10px;
+  border-radius: 6px;
+  color: #16a34a;
+  font-weight: bold;
+}
+
+/* Question */
+.mcq-question {
+  margin: 10px 0;
+  color: #0f172a;
+}
+
+/* Options */
+.option {
+  background: #f1f5f9;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 8px;
+}
+
+/* Highlight correct */
+.correct-option {
+  background: #dcfce7;
+  border: 1px solid #16a34a;
+  color: #16a34a;
+  font-weight: bold;
+}
+
+/* Actions */
+.mcq-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.edit-btn {
+  background: #3b82f6;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: white;
+}
+
+.delete-btn {
+  background: #ef4444;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: white;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 4px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+  background: #ffffff;
+  color: #1e293b;
+}
+
+.pagination .active {
+  background: #0ea5e9;
+  color: white;
+}
+
+/* Loader */
+.loader {
+  border: 4px solid #e2e8f0;
+  border-top: 4px solid #0ea5e9;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 40px auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+  background: #ffffff;
+  padding: 20px;
+  width: 400px;
+  margin: 100px auto;
+  border-radius: 10px;
+}
+
+.modal input,
+.modal select {
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+  background: #f8fafc;
+  border: 1px solid #cbd5f5;
+  color: #1e293b;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}

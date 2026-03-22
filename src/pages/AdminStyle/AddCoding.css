@@ -1,0 +1,199 @@
+/* ===== MAIN CONTAINER ===== */
+.coding-container {
+  background: #f8fafc;
+  min-height: 100vh;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== TITLE ===== */
+.page-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* ===== FORM SECTION ===== */
+.form-section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Inputs */
+.form-section input,
+.form-section textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+/* Row Fix */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 200px; /* fixed alignment */
+  gap: 15px;
+}
+
+/* ===== TABLE SECTION ===== */
+.table-section {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Header */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.table-header h3 {
+  margin: 0;
+}
+
+.table-header button {
+  background: #3b82f6;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== TABLE ===== */
+.table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Row */
+.table-row {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 120px 80px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* Header row */
+.table-row.head {
+  font-weight: 600;
+  color: #475569;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+/* Fix inputs inside table */
+.table-row input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+/* Center toggle */
+.table-row label {
+  display: flex;
+  justify-content: center;
+}
+
+/* Delete button */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ===== SUBMIT BAR ===== */
+.submit-bar {
+  position: sticky;
+  bottom: 0;
+  background: #ffffff;
+  padding: 15px;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Button */
+.submit-bar button {
+  width: 100%;
+  padding: 14px;
+  background: #22c55e;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-bar button:hover {
+  background: #16a34a;
+}
+
+/* ===== ERROR ===== */
+.error {
+  border: 1px solid #ef4444 !important;
+}
+
+.error-text {
+  color: #ef4444;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/* ===== TOGGLE SWITCH ===== */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #cbd5e1;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+  background-color: #22c55e;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(20px);
+}

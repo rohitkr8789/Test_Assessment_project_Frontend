@@ -1,0 +1,149 @@
+#candidate-leaderboard-root{
+min-height:100vh;
+background:linear-gradient(135deg,#eef2ff,#f8fafc);
+padding:50px 30px;
+font-family:sans-serif;
+}
+
+.candidate-leaderboard-container{
+max-width:1100px;
+margin:auto;
+}
+
+.candidate-leaderboard-title{
+text-align:center;
+font-size:38px;
+font-weight:700;
+margin-bottom:45px;
+color:#1e293b;
+}
+
+/* PODIUM */
+
+.candidate-leaderboard-podium{
+display:flex;
+justify-content:center;
+align-items:flex-end;
+gap:30px;
+margin-bottom:60px;
+flex-wrap:wrap;
+}
+
+.candidate-podium-card{
+background:white;
+width:200px;
+padding:25px;
+border-radius:16px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transition:.3s;
+}
+
+.candidate-podium-card:hover{
+transform:translateY(-6px);
+}
+
+/* HEIGHT EFFECT */
+
+.podium-rank-1{
+transform:scale(1.1);
+border:3px solid #fbbf24;
+}
+
+.podium-rank-2{
+border:2px solid #cbd5f5;
+}
+
+.podium-rank-3{
+border:2px solid #f59e0b;
+}
+
+.candidate-podium-rank{
+font-size:38px;
+margin-bottom:10px;
+}
+
+.candidate-podium-name{
+font-size:20px;
+font-weight:600;
+margin-bottom:8px;
+color:#1e293b;
+}
+
+.candidate-podium-score{
+font-weight:600;
+color:#4f46e5;
+margin-bottom:5px;
+}
+
+.candidate-podium-stars{
+color:#f59e0b;
+font-weight:500;
+}
+
+/* TABLE */
+
+.candidate-leaderboard-table-card{
+background:white;
+padding:25px;
+border-radius:16px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.candidate-leaderboard-table{
+width:100%;
+border-collapse:collapse;
+}
+
+.candidate-leaderboard-table thead{
+background:#6366f1;
+color:white;
+}
+
+.candidate-leaderboard-table th{
+padding:14px;
+text-align:left;
+}
+
+.candidate-leaderboard-table td{
+padding:14px;
+border-bottom:1px solid #e5e7eb;
+}
+
+.candidate-leaderboard-row:hover{
+background:#f9fafb;
+}
+
+/* SCORE BAR */
+
+.candidate-score-bar-wrapper{
+position:relative;
+background:#e5e7eb;
+height:10px;
+border-radius:20px;
+}
+
+.candidate-score-bar{
+background:#6366f1;
+height:100%;
+border-radius:20px;
+}
+
+.candidate-score-text{
+position:absolute;
+top:-20px;
+right:0;
+font-size:12px;
+color:#1e293b;
+}
+
+.candidate-stars{
+color:#f59e0b;
+font-weight:600;
+}
+
+.candidate-leaderboard-empty{
+text-align:center;
+padding:20px;
+color:#64748b;
+}

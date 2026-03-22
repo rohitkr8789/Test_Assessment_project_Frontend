@@ -1,0 +1,75 @@
+.admin-navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px 30px;
+background:#1f2937;
+color:white;
+}
+
+.admin-logo{
+font-size:20px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.admin-nav-links span{
+margin:0 12px;
+cursor:pointer;
+font-weight:500;
+}
+
+.admin-nav-links span:hover{
+color:#38bdf8;
+}
+
+.active-link{
+color:#38bdf8;
+}
+
+.profile-section{
+position:relative;
+cursor:pointer;
+}
+
+.profile-trigger{
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+.profile-img{
+width:35px;
+height:35px;
+border-radius:50%;
+}
+
+.profile-popup{
+position:absolute;
+right:0;
+top:50px;
+background:white;
+color:black;
+padding:15px;
+border-radius:8px;
+width:200px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.popup-img{
+width:60px;
+height:60px;
+border-radius:50%;
+margin-bottom:10px;
+}
+
+.logout-btn{
+margin-top:10px;
+background:#ef4444;
+border:none;
+color:white;
+padding:8px 12px;
+border-radius:6px;
+cursor:pointer;
+}

@@ -1,0 +1,129 @@
+.coding-container {
+  padding: 25px;
+  background: #f1f5f9;
+  min-height: 100vh;
+}
+
+/* Header */
+.coding-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Search */
+.search-box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+/* Grid */
+.coding-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  gap: 15px;
+}
+
+/* Card */
+.coding-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.coding-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Top */
+.card-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.marks {
+  background: #dcfce7;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* Desc */
+.description {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* Footer */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Buttons */
+.view-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 6px 10px;
+}
+
+.pagination .active {
+  background: #2563eb;
+  color: white;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.confirm {
+  background: #ef4444;
+  color: white;
+}
