@@ -83,6 +83,13 @@ function StudentNavbar() {
           🏆 Leaderboard
         </span>
 
+         <span
+          className={isActive("/about")}
+          onClick={() => navigate("/about")}
+        >
+          About
+        </span>
+
       </div>
 
       {/* Profile */}
@@ -114,7 +121,7 @@ function StudentNavbar() {
 
             <h4>{user?.name}</h4>
 
-            <p>
+            <p className="email-box">
               <strong>Email:</strong> {user?.email}
             </p>
 

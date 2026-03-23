@@ -54,17 +54,11 @@ function LandingPage() {
           </p>
 
           <div className="hero-buttons">
-            <button
-              className="start-btn"
-              onClick={() => navigate("/register")}
-            >
+            <button className="start-btn" onClick={() => navigate("/register")}>
               Start Free
             </button>
 
-            <button
-              className="login-btn"
-              onClick={() => navigate("/login")}
-            >
+            <button className="login-btn" onClick={() => navigate("/login")}>
               Login
             </button>
           </div>
@@ -85,6 +79,25 @@ function LandingPage() {
     StringBuilder sb = new StringBuilder(s);
     return sb.reverse().toString();
 }`}</pre>
+          </div>
+        </div>
+      </section>
+
+      <section className="landing-about-strip">
+        <div className="landing-about-content">
+          <img
+            src="/Rohit_kr.jpeg"
+            alt="Rohit Kumar"
+            className="landing-about-img"
+          />
+
+          <div className="landing-about-text">
+            <h3>Built by Rohit Kumar</h3>
+
+            <p>
+              Designed and developed to simulate real-world coding assessments,
+              helping candidates prepare better for technical interviews.
+            </p>
           </div>
         </div>
       </section>
@@ -110,7 +123,7 @@ function LandingPage() {
       </section>
 
       <footer className="footer">
-        © 2026 Java Technical Assessment Platform
+        © 2026 Java Technical Assessment Platform • Developed by Rohit Kumar
       </footer>
     </div>
   );

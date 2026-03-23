@@ -19,6 +19,7 @@ import AddMCQ from "./pages/Admin/AddMCQ";
 import AddCoding from "./pages/Admin/AddCoding";
 import AdminMCQList from "./pages/Admin/AdminMCQList";
 import AdminCodingList from "./pages/Admin/AdminCodingList";
+import AboutPage from "./components/AboutPage";
 
 import ForgotPassword from "./pages/ForgotPassword";
 
@@ -69,6 +70,7 @@ function App() {
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/coding" element={<CodingQuestionList />} />
         <Route path="/coding-test/:id" element={<CodingTest />} />
+        <Route path="/about" element={<AboutPage />} />
 
         <Route path="/forgot-password" element={<ForgotPassword />} />
 

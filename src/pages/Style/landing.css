@@ -448,3 +448,108 @@ body {
     font-size: 12px;
   }
 }
+
+/* ================= LANDING PROFILE SECTION ================= */
+
+.landing-hero {
+  gap: 60px;
+}
+
+.landing-hero-left {
+  position: relative;
+}
+
+.landing-creator-text {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #8fa0c0;
+  letter-spacing: 0.6px;
+}
+
+/* RIGHT SIDE PROFILE CARD */
+
+.landing-hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-profile-card {
+  width: 280px;
+  padding: 25px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 234, 255, 0.18);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.landing-profile-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 25px 60px rgba(0, 234, 255, 0.2);
+}
+
+.landing-profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid rgba(0, 234, 255, 0.4);
+  box-shadow: 0 0 20px rgba(0, 234, 255, 0.25);
+}
+
+.landing-profile-name {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.landing-profile-role {
+  font-size: 14px;
+  color: #8fa0c0;
+}
+
+/* ========== ABOUT CREATOR STRIP ========== */
+
+.landing-about-strip {
+  position: relative;
+  z-index: 5;
+  padding: 40px 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.landing-about-content {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px 30px;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 234, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.landing-about-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(0, 234, 255, 0.4);
+}
+
+.landing-about-text h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.landing-about-text p {
+  font-size: 14px;
+  color: #9fb0d1;
+  line-height: 1.5;
+}
