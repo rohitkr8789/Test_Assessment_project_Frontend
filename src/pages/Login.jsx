@@ -11,9 +11,11 @@ function Login() {
   const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
   const storage = rememberMe ? localStorage : sessionStorage;
 
   const handleLogin = async (e) => {
+    setLoading(true);
     e.preventDefault();
 
     try {
@@ -62,6 +64,8 @@ function Login() {
     } catch (err) {
       console.log(err);
       setError("Invalid email or password");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -154,7 +158,9 @@ function Login() {
               </span>
             </div>
 
-            <button type="submit">Login</button>
+            <button onClick={handleLogin} disabled={loading}>
+              {loading ? "Logging in..." : "Login"}
+            </button>
 
             <div className="login-link">
               Don't have an account?
