@@ -1,5 +1,5 @@
 import "./AboutPage.css";
-import StudentNavbar from "../../components/StudentNavbar";
+import StudentNavbar from "./StudentNavbar";
 
 function AboutPage() {
   return (
