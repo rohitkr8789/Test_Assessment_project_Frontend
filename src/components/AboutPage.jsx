@@ -1,7 +1,10 @@
 import "./AboutPage.css";
+import StudentNavbar from "../../components/StudentNavbar";
 
 function AboutPage() {
   return (
+    <>
+   <StudentNavbar />
     <div className="aboutpage-main-container">
 
       <div className="aboutpage-content-wrapper">
@@ -57,6 +60,7 @@ function AboutPage() {
       </div>
 
     </div>
+     </>
   );
 }
 
