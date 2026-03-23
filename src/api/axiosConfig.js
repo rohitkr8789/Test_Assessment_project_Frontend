@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:8789"
+  baseURL: "https://java-test-lab.onrender.com"
 });
 
 api.interceptors.request.use((config) => {
