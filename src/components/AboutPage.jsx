@@ -33,7 +33,7 @@ function AboutPage() {
 
               <p className="aboutpage-developer-role">
                 <strong>Java Full Stack Developer</strong> <br />
-                Rohit Kumar • 📧 rohit2kumar02@gmail.com • 📱 +91 8789085464
+                📧 rohit2kumar02@gmail.com | 📱 +91 8789085464
               </p>
 
               <div className="aboutpage-developer-info">
